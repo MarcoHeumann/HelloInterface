@@ -72,12 +72,13 @@ public class TutorialController
 	 */
 	public void printValues()
 	{
+		System.out.println("Five types of variables. No interface used, no objects used.");
+		System.out.println("20 Lines of code needed for 5 variables.");
+		System.out.println();
 		System.out.println("Hello Interface World Nr. " + strValueOne);
 		System.out.println("Hello Interface World Nr. " + strValueTwo);
 		System.out.println("Hello Interface World Nr. " + strValueThree);
 		System.out.println("Hello Interface World Nr. " + strValueFour);
 		System.out.println("Hello Interface World Nr. " + strValueFive);
-		System.out.println();
-		System.out.println("15 Lines of code needed for 5 variables.");
 	}
 }

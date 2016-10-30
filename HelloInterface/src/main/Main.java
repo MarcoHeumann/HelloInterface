@@ -8,7 +8,11 @@ import controller.TutorialController;
  * values for adding in this step.
  * 
  * For every part of the tutorial we will call controller.setValues, controller.formatValues and
- * controller.printValues. Then we also print the needed lines of code in these three methods.
+ * controller.printValues. Then we also print the needed lines of code in these three methods + the
+ * lines needed to store them.
+ * 
+ * Note: Formatting can always be done inline. For the sake of this tutorial we will keep it
+ * seperate tho.
  * 
  * This part will add two more types of variables for a total of five.
  * 
