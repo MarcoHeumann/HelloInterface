@@ -8,19 +8,19 @@ import interfaces.INumbers;
  * @author Marco
  *
  */
-public class DblModel implements INumbers
+public class FloModel implements INumbers
 {
 	// we save our Number here
-	double dblVal;
+	float floVal;
 
 	/**
 	 * Constructor
 	 * 
 	 * @param d
 	 */
-	public DblModel(double d)
+	public FloModel(float f)
 	{
-		dblVal = d;
+		floVal = f;
 	}
 
 	/**
@@ -30,6 +30,6 @@ public class DblModel implements INumbers
 	@Override
 	public String calculateThis(int base)
 	{
-		return "shiny double " + (base + dblVal);
+		return "shiny float " + (base + floVal);
 	}
 }

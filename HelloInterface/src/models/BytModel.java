@@ -8,19 +8,19 @@ import interfaces.INumbers;
  * @author Marco
  *
  */
-public class DblModel implements INumbers
+public class BytModel implements INumbers
 {
 	// we save our Number here
-	double dblVal;
+	byte bytVal;
 
 	/**
 	 * Constructor
 	 * 
 	 * @param d
 	 */
-	public DblModel(double d)
+	public BytModel(byte b)
 	{
-		dblVal = d;
+		bytVal = b;
 	}
 
 	/**
@@ -30,6 +30,6 @@ public class DblModel implements INumbers
 	@Override
 	public String calculateThis(int base)
 	{
-		return "shiny double " + (base + dblVal);
+		return "shiny byte " + (base + bytVal);
 	}
 }

@@ -7,8 +7,8 @@ import controller.TutorialController;
  * "Hello Interface World Nr xx" into the console. The catch: We have three different types of
  * values for adding in this step.
  * 
- * This part will add a method to the interface and implement it in each class. The goal is to be
- * able to use a loop for formatting and printing in the TutorialController.
+ * This part will add some additional output to each class, so we can doublecheck the output. We
+ * also add two more models for added types.
  * 
  * @author Marco
  *
