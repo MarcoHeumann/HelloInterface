@@ -1,7 +1,7 @@
 package controller;
 
 /**
- * Controller for version 1 of this tutorial. No interface, no objects. Three subtasks.
+ * Controller for version 2 of this tutorial. No interface, no objects. Five subtasks.
  * 
  * @author Marco
  *
