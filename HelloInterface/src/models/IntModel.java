@@ -23,16 +23,6 @@ public class IntModel implements INumbers
 		intVal = i;
 	}
 
-	public int getIntVal()
-	{
-		return intVal;
-	}
-
-	public void setIntVal(int intVal)
-	{
-		this.intVal = intVal;
-	}
-
 	/**
 	 * Forced method from the interface INumbers. Takes the base int and adds whatever int number is
 	 * in this object.

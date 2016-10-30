@@ -23,16 +23,6 @@ public class DblModel implements INumbers
 		dblVal = d;
 	}
 
-	public double getDblVal()
-	{
-		return dblVal;
-	}
-
-	public void setDblVal(double dblVal)
-	{
-		this.dblVal = dblVal;
-	}
-
 	/**
 	 * Forced method from the interface INumbers. Takes the base int and adds whatever dbl number is
 	 * in this object.

@@ -23,16 +23,6 @@ public class StrModel implements INumbers
 		strVal = s;
 	}
 
-	public String getStrVal()
-	{
-		return strVal;
-	}
-
-	public void setStrVal(String strVal)
-	{
-		this.strVal = strVal;
-	}
-
 	/**
 	 * Forced method from the interface INumbers. Takes the base int and adds whatever number is
 	 * hidden in the String of this object.
