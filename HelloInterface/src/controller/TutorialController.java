@@ -40,7 +40,7 @@ public class TutorialController
 	{
 		System.out.println("Three types of variables again. Interface and objects used the right way.");
 		System.out.println();
-		System.out.println("Thanks for looping over a list<interface> we reduced the code a lot.");
+		System.out.println("Thanks for looping over a list<interface> we reduced the code a lot. It is also very modular now, check next branch on how to add more types of numbers.");
 		System.out.println();
 		for (INumbers val : listNumbers)
 		{
