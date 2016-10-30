@@ -17,3 +17,4 @@ Show why the extra work from the last step pays off by adding functionality to t
 Tutorial40 branch:
 Readds the extra tasks from Tutorial10 branch to show how easily you can add "modules" to a program working with interfaces.
 
+Tutorial50 branch: Outsources the number adding stuff so the main program needs ZERO code changes when new modules are added. Infinite values of all the supported types can be added. Supporting new types is a matter of adding a single line of code and a model.
