@@ -61,7 +61,8 @@ public class TutorialController
 	public void printValues()
 	{
 		System.out.println("Three types of variables. No interface used, no objects used.");
-		System.out.println("12 Lines of code needed for 3 variables.");
+		System.out.println();
+		System.out.println("15 Lines of code needed for three variables. No modularity at all. Five places of code need updating to add more variable types!");
 		System.out.println();
 		System.out.println("Hello Interface World Nr. " + strValueOne);
 		System.out.println("Hello Interface World Nr. " + strValueTwo);
