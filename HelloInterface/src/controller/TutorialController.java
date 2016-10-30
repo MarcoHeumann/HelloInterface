@@ -24,13 +24,6 @@ public class TutorialController
 	String strValueThree;
 
 	/**
-	 * Constructor
-	 */
-	public TutorialController()
-	{
-	}
-
-	/**
 	 * Set values method
 	 */
 	public void setValues()
