@@ -28,13 +28,6 @@ public class TutorialController
 	String strValueThree;
 
 	/**
-	 * Constructor
-	 */
-	public TutorialController()
-	{
-	}
-
-	/**
 	 * Set values method
 	 */
 	public void setValues()
@@ -65,7 +58,8 @@ public class TutorialController
 	public void printValues()
 	{
 		System.out.println("Three types of variables again. Interface and objects used.");
-		System.out.println("12 Lines of code needed for 3 variables. Plus additional classes. Why would you want this? Check next branch!");
+		System.out.println();
+		System.out.println("15 Lines of code needed for three variables again. Why is this a better approach again? Check next branch.");
 		System.out.println();
 		System.out.println("Hello Interface World Nr. " + strValueOne);
 		System.out.println("Hello Interface World Nr. " + strValueTwo);
