@@ -32,4 +32,14 @@ public class IntModel implements INumbers
 	{
 		this.intVal = intVal;
 	}
+
+	/**
+	 * Forced method from the interface INumbers. Takes the base int and adds whatever int number is
+	 * in this object.
+	 */
+	@Override
+	public String calculateThis(int base)
+	{
+		return "" + (base + intVal);
+	}
 }

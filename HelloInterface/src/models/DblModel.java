@@ -32,4 +32,14 @@ public class DblModel implements INumbers
 	{
 		this.dblVal = dblVal;
 	}
+
+	/**
+	 * Forced method from the interface INumbers. Takes the base int and adds whatever dbl number is
+	 * in this object.
+	 */
+	@Override
+	public String calculateThis(int base)
+	{
+		return "" + (base + dblVal);
+	}
 }

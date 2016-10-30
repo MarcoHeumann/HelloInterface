@@ -7,14 +7,8 @@ import controller.TutorialController;
  * "Hello Interface World Nr xx" into the console. The catch: We have three different types of
  * values for adding in this step.
  * 
- * For every part of the tutorial we will call controller.setValues, controller.formatValues and
- * controller.printValues. Then we also print the needed lines of code in these three methods + the
- * lines needed to store them.
- * 
- * Note: Formatting can always be done inline. For the sake of this tutorial we will keep it
- * seperate tho.
- * 
- * This part will add an interface and some objects to replace our number types.
+ * This part will add a method to the interface and implement it in each class. The goal is to be
+ * able to use a loop for formatting and printing in the TutorialController.
  * 
  * @author Marco
  *
@@ -25,7 +19,6 @@ public class Main
 	{
 		TutorialController tutCon = new TutorialController();
 		tutCon.setValues();
-		tutCon.formatValues();
 		tutCon.printValues();
 	}
 }

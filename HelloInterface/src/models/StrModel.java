@@ -32,4 +32,14 @@ public class StrModel implements INumbers
 	{
 		this.strVal = strVal;
 	}
+
+	/**
+	 * Forced method from the interface INumbers. Takes the base int and adds whatever number is
+	 * hidden in the String of this object.
+	 */
+	@Override
+	public String calculateThis(int base)
+	{
+		return "" + (base + Integer.parseInt(strVal));
+	}
 }

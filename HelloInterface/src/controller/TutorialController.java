@@ -1,5 +1,9 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import interfaces.INumbers;
 import models.DblModel;
 import models.IntModel;
 import models.StrModel;
@@ -13,50 +17,20 @@ import models.StrModel;
 public class TutorialController
 {
 	/**
-	 * Variable Block
+	 * Variable Block, only the base and a list of types left. Yes, you can add differend types of
+	 * values to the same list, as long as they all implement the same interface.
 	 */
 	int intBase = 10;
-	IntModel intVal;
-	DblModel dblVal;
-	StrModel strVal;
+	List<INumbers> listNumbers = new ArrayList<INumbers>();
 
 	/**
-	 * Optional variables. Could be done inline as well.
-	 */
-	String strValueOne;
-	String strValueTwo;
-	String strValueThree;
-
-	/**
-	 * Constructor
-	 */
-	public TutorialController()
-	{
-	}
-
-	/**
-	 * Set values method
+	 * Set values method is now more of an "addValues" method.
 	 */
 	public void setValues()
 	{
-		intVal = new IntModel(1);
-		dblVal = new DblModel(2.3);
-		strVal = new StrModel("3");
-	}
-
-	/**
-	 * format values method
-	 */
-	public void formatValues()
-	{
-		// first format
-		strValueOne = "" + (intBase + intVal.getIntVal());
-
-		// second format, would look dirty without compilers doing the work behind the scene
-		strValueTwo = "" + (intBase + dblVal.getDblVal());
-
-		// third format. Can not cast everything, so this actually needs converting.
-		strValueThree = "" + (intBase + Integer.parseInt(strVal.getStrVal()));
+		listNumbers.add(new IntModel(1));
+		listNumbers.add(new DblModel(2.3));
+		listNumbers.add(new StrModel("3"));
 	}
 
 	/**
@@ -64,11 +38,13 @@ public class TutorialController
 	 */
 	public void printValues()
 	{
-		System.out.println("Three types of variables again. Interface and objects used.");
-		System.out.println("12 Lines of code needed for 3 variables. Plus additional classes. Why would you want this? Check next branch!");
+		System.out.println("Three types of variables again. Interface and objects used the right way.");
 		System.out.println();
-		System.out.println("Hello Interface World Nr. " + strValueOne);
-		System.out.println("Hello Interface World Nr. " + strValueTwo);
-		System.out.println("Hello Interface World Nr. " + strValueThree);
+		System.out.println("Thanks for looping over a list<interface> we reduced the code a lot.");
+		System.out.println();
+		for (INumbers val : listNumbers)
+		{
+			System.out.println("Hello Interface World Nr. " + val.calculateThis(intBase));
+		}
 	}
 }
