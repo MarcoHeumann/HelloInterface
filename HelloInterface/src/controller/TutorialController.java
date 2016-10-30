@@ -5,7 +5,7 @@ import models.IntModel;
 import models.StrModel;
 
 /**
- * Controller for version 1 of this tutorial. No interface, no objects. Three subtasks.
+ * Controller for version 3 of this tutorial. Basic interface without functionality, basic objects.
  * 
  * @author Marco
  *

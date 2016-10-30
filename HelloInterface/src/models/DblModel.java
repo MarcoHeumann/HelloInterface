@@ -27,9 +27,4 @@ public class DblModel implements INumbers
 	{
 		return dblVal;
 	}
-
-	public void setDblVal(double dblVal)
-	{
-		this.dblVal = dblVal;
-	}
 }

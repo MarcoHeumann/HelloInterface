@@ -27,9 +27,4 @@ public class StrModel implements INumbers
 	{
 		return strVal;
 	}
-
-	public void setStrVal(String strVal)
-	{
-		this.strVal = strVal;
-	}
 }

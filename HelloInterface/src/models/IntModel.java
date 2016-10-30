@@ -27,9 +27,4 @@ public class IntModel implements INumbers
 	{
 		return intVal;
 	}
-
-	public void setIntVal(int intVal)
-	{
-		this.intVal = intVal;
-	}
 }
