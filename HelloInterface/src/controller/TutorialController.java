@@ -19,7 +19,7 @@ import models.StrModel;
 public class TutorialController
 {
 	/**
-	 * Variable Block, only the base and a list of types left. Yes, you can add differend types of
+	 * Variable Block, only the base and a list of types left. Yes, you can add different types of
 	 * values to the same list, as long as they all implement the same interface.
 	 */
 	int intBase = 10;
