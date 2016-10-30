@@ -10,6 +10,8 @@ import controller.TutorialController;
  * For every part of the tutorial we will call controller.setValues, controller.formatValues and
  * controller.printValues. Then we also print the needed lines of code in these three methods.
  * 
+ * This part will add two more types of variables for a total of five.
+ * 
  * @author Marco
  *
  */
