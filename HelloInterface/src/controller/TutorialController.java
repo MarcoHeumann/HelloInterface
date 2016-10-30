@@ -25,15 +25,12 @@ public class TutorialController
 	 */
 	public TutorialController()
 	{
-		setValues();
-		formatValues();
-		printValues();
 	}
 
 	/**
 	 * Set values method
 	 */
-	private void setValues()
+	public void setValues()
 	{
 		intVal = 1;
 		dblVal = 2.3;
@@ -43,7 +40,7 @@ public class TutorialController
 	/**
 	 * format values method
 	 */
-	private void formatValues()
+	public void formatValues()
 	{
 		// first format
 		strValueOne = "" + (intBase + intVal);
@@ -58,7 +55,7 @@ public class TutorialController
 	/**
 	 * print values method
 	 */
-	private void printValues()
+	public void printValues()
 	{
 		System.out.println("Hello Interface World Nr. " + strValueOne);
 		System.out.println("Hello Interface World Nr. " + strValueTwo);

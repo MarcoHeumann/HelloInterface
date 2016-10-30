@@ -18,5 +18,8 @@ public class Main
 	public static void main(String[] args)
 	{
 		TutorialController tutCon = new TutorialController();
+		tutCon.setValues();
+		tutCon.formatValues();
+		tutCon.printValues();
 	}
 }
