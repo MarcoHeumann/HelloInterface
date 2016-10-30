@@ -28,13 +28,6 @@ public class TutorialController
 	String strValueFive;
 
 	/**
-	 * Constructor
-	 */
-	public TutorialController()
-	{
-	}
-
-	/**
 	 * Set values method
 	 */
 	public void setValues()
