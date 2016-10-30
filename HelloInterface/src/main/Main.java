@@ -14,7 +14,7 @@ import controller.TutorialController;
  * Note: Formatting can always be done inline. For the sake of this tutorial we will keep it
  * seperate tho.
  * 
- * This part will add two more types of variables for a total of five.
+ * This part will add an interface and some objects to replace our number types.
  * 
  * @author Marco
  *

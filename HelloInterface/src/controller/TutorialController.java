@@ -1,5 +1,9 @@
 package controller;
 
+import models.DblModel;
+import models.IntModel;
+import models.StrModel;
+
 /**
  * Controller for version 1 of this tutorial. No interface, no objects. Three subtasks.
  * 
@@ -12,11 +16,9 @@ public class TutorialController
 	 * Variable Block
 	 */
 	int intBase = 10;
-	int intVal;
-	double dblVal;
-	String strVal;
-	float floVal;
-	byte bytVal;
+	IntModel intVal;
+	DblModel dblVal;
+	StrModel strVal;
 
 	/**
 	 * Optional variables. Could be done inline as well.
@@ -24,8 +26,6 @@ public class TutorialController
 	String strValueOne;
 	String strValueTwo;
 	String strValueThree;
-	String strValueFour;
-	String strValueFive;
 
 	/**
 	 * Constructor
@@ -39,11 +39,9 @@ public class TutorialController
 	 */
 	public void setValues()
 	{
-		intVal = 1;
-		dblVal = 2.3;
-		strVal = "3";
-		floVal = 4;
-		bytVal = 5;
+		intVal = new IntModel(1);
+		dblVal = new DblModel(2.3);
+		strVal = new StrModel("3");
 	}
 
 	/**
@@ -52,19 +50,13 @@ public class TutorialController
 	public void formatValues()
 	{
 		// first format
-		strValueOne = "" + (intBase + intVal);
+		strValueOne = "" + (intBase + intVal.getIntVal());
 
 		// second format, would look dirty without compilers doing the work behind the scene
-		strValueTwo = "" + (intBase + dblVal);
+		strValueTwo = "" + (intBase + dblVal.getDblVal());
 
 		// third format. Can not cast everything, so this actually needs converting.
-		strValueThree = "" + (intBase + Integer.parseInt(strVal));
-
-		// fourth format
-		strValueFour = "" + (intBase + floVal);
-
-		// Fifth format
-		strValueFive = "" + (intBase + bytVal);
+		strValueThree = "" + (intBase + Integer.parseInt(strVal.getStrVal()));
 	}
 
 	/**
@@ -72,13 +64,11 @@ public class TutorialController
 	 */
 	public void printValues()
 	{
-		System.out.println("Five types of variables. No interface used, no objects used.");
-		System.out.println("20 Lines of code needed for 5 variables.");
+		System.out.println("Three types of variables again. Interface and objects used.");
+		System.out.println("12 Lines of code needed for 3 variables. Plus additional classes. Why would you want this? Check next branch!");
 		System.out.println();
 		System.out.println("Hello Interface World Nr. " + strValueOne);
 		System.out.println("Hello Interface World Nr. " + strValueTwo);
 		System.out.println("Hello Interface World Nr. " + strValueThree);
-		System.out.println("Hello Interface World Nr. " + strValueFour);
-		System.out.println("Hello Interface World Nr. " + strValueFive);
 	}
 }
