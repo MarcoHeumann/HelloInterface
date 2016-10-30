@@ -16,6 +16,9 @@ public class TutorialController
 	double dblVal;
 	String strVal;
 
+	/**
+	 * Optional variables. Could be done inline as well.
+	 */
 	String strValueOne;
 	String strValueTwo;
 	String strValueThree;
@@ -57,10 +60,11 @@ public class TutorialController
 	 */
 	public void printValues()
 	{
+		System.out.println("Three types of variables. No interface used, no objects used.");
+		System.out.println("12 Lines of code needed for 3 variables.");
+		System.out.println();
 		System.out.println("Hello Interface World Nr. " + strValueOne);
 		System.out.println("Hello Interface World Nr. " + strValueTwo);
 		System.out.println("Hello Interface World Nr. " + strValueThree);
-		System.out.println();
-		System.out.println("9 Lines of code needed for 3 variables.");
 	}
 }
